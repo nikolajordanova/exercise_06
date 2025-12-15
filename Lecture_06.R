@@ -40,7 +40,7 @@ DoubleDigestProblem <- function(fragments_A, fragments_B, fragments_AB){
       # Rozdíly - délky fragmentů, které vzniknou kombinací A a B
       successive_differences <- sort(diff(combined_positions))
       
-      # Pokud se rozdílky shodují s původním
+      # Pokud se rozdíly shodují s původním
       if (all(successive_differences == fragments_AB)){
         # Pozice bereme bez nuly a posledního čísla
         positions_A <- positions_A[2:(length(positions_A) - 1)]
